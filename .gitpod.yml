@@ -8,3 +8,4 @@ tasks:
 vscode:
   extensions:
     - formulahendry.code-runner
+    - https://github.com/RamSailopal/YottaDB-dashboard/raw/main/Vista-Docker/theiaa-build/dsilin.mumps-0.1.1.vsix
