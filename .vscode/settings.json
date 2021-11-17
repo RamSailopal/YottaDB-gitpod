@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.m": "mumps"
+    },
+    "code-runner.executorMap": {
+        "mumps": "docker exec -it yottadb 'ydb <<< \"ZL \"$fileName\" D ^$fileNameWithoutExt\"'"
+    }
+}
