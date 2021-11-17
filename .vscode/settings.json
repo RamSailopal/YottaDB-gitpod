@@ -3,6 +3,9 @@
         "*.m": "mumps"
     },
     "code-runner.executorMap": {
-        "mumps": "docker exec -it yottadb 'ydb <<< \"ZL \"$fileName\" D ^$fileNameWithoutExt\"'"
+        "mumps": "docker exec -i yottadb /bin/bash -c '/opt/yottadb/current/ydb <<< \"ZL \\\"$fileName\\\" D ^$fileNameWithoutExt\"'"
     }
 }
+
+
+
