@@ -2,4 +2,4 @@ tasks:
   - init: |
       echo 'TODO: build project'
     command: |
-      cd data && docker run -d -v $PWD:/data yottadb/yottadb-base tail -f /dev/null
+      cd data && docker run -it -v $PWD:/data yottadb/yottadb-base /opt/yottadb/current/ydb
