@@ -3,7 +3,7 @@ tasks:
   - init: |
       echo 'TODO: build project'
     command: |
-      ln -s ../data/r1.32_x86_64/r ../data/r && cd compose && docker-compose up
+      ln -s /workspace/YottaDB-gitpod/data/r1.32_x86_64/r /workspace/YottaDB-gitpod/data/r && cd compose && docker-compose up
 
 vscode:
   extensions:
