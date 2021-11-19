@@ -48,8 +48,7 @@ services:
       - ydb_dir=/data
       - gtmdir=/data
       - gtmgbldir=/home/vehu/g/yottadb.gld
-   entrypoint:
-      - [ '/bin/bash', '-c', 'export gtmroutines="$gtmroutines /data/r1.32_x86_64/r" && ${entry_path}/bin/start.sh' ]
+      - gtmroutines="/home/vehu/octoroutines /home/vehu/lib/gtm/plugin/o/_ydbocto.so /home/vehu/lib/gtm/plugin/o/_ydbposix.so /home/vehu/p/r1.32_x86_64*(/home/vehu/p) /home/vehu/s/r1.32_x86_64*(/home/vehu/s) /home/vehu/r/r1.32_x86_64*(/home/vehu/r) /home/vehu/lib/gtm/libgtmutil.so /home/vehu/lib/gtm /data/r1.32_x86_64/r"
       
 networks:
     yottanet:
