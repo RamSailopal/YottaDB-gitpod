@@ -11,6 +11,16 @@ services:
       - yottanet
    volumes:
      - ../data:/home/mysql
+     
+ phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+       - yottanet
 
  yottadb:
    image: docker.io/yottadb/yottadb-base
@@ -20,8 +30,24 @@ services:
    volumes:
       - ../data:/data
    entrypoint: [ "/bin/bash", "-c", "tail -f /dev/null" ]
+   
+ yottagui:
+   image: docker.io/samindcon/vehu
+   container_name: yottagui
+   port:
+     - 22:2222
+     - 8001:8001
+     - 9430:9430
+     - 1338:1338
+     - 8089:8089
+   networks:
+      - yottanet
+   volumes:
+      - ../data:/data
+   environment:
+      - ydb_dir=/data
+      - gtmdir=/data
+
       
-
-
 networks:
     yottanet:
