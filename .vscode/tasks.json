@@ -1,0 +1,16 @@
+{
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "label": "YDB",
+                        "type": "shell",
+                        "command": "docker exec -it yottadb /opt/yottadb/current/ydb"
+                },
+        {
+                        "label": "mysql",
+                        "type": "shell",
+                        "command": "docker exec -it mysql mysql"
+                },
+
+        ]
+}
