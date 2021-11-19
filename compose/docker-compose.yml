@@ -48,6 +48,7 @@ services:
       - gtmdir=/data
       - gtmgbldir=/data/r1.32_x86_64/g/yottadb.gld
       - ydb_gbldir=/data/r1.32_x86_64/g/yottadb.gld
+      - ydb_rel="r1.32_x86_64"
       
 networks:
     yottanet:
