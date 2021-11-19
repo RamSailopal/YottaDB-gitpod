@@ -48,7 +48,7 @@ services:
       - ydb_dir=/data
       - gtmdir=/data
       - gtmgbldir=/home/vehu/g/yottadb.gld
-      - gtmroutines="$gtmroutines /data/r1.32_x86_64/g:/data/r1.32_x86_64/r"
+      - gtmroutines="$gtmroutines /data/r1.32_x86_64/r"
 
       
 networks:
