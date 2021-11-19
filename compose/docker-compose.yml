@@ -1,0 +1,27 @@
+version: "2"
+services:
+ mysql:
+   image: mysql
+   container_name: mysql
+   command: --default-authentication-plugin=mysql_native_password
+   restart: always
+   environment:
+     MYSQL_ROOT_PASSWORD: present
+   networks:
+      - yottanet
+   volumes:
+     - ../data:/home/mysql
+
+ yottadb:
+   image: docker.io/yottadb/yottadb-base
+   container_name: yottab
+   networks:
+      - yottanet
+   volumes:
+      - ../data:/data
+   entrypoint: [ "/bin/bash", "-c", "/opt/yottadb/current/ydb" ]
+      
+
+
+networks:
+    yottanet:
