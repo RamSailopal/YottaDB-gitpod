@@ -34,7 +34,7 @@ services:
  yottagui:
    image: docker.io/samindcon/vehu
    container_name: yottagui
-   port:
+   ports:
      - 22:2222
      - 8001:8001
      - 9430:9430
