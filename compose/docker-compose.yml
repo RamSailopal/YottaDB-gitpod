@@ -43,11 +43,12 @@ services:
       - yottanet
    volumes:
       - ../data:/data
+      - ../data/r1.32_x86_64/g:/home/vehu/g
    environment:
       - ydb_dir=/data
       - gtmdir=/data
-      - gtmgbldir=/data/r1.32_x86_64/g/yottadb.gld
-      - ydb_gbldir=/data/r1.32_x86_64/g/yottadb.gld
+      - gtmgbldir=/home/vehu/g/yottadb.gld
+      - ydb_gbldir=/home/vehu/g/yottadb.gld
       - ydb_rel="r1.32_x86_64"
       
 networks:
