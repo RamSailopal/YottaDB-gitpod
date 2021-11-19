@@ -19,7 +19,7 @@ services:
       - yottanet
    volumes:
       - ../data:/data
-   entrypoint: [ "/bin/bash", "-c", "/opt/yottadb/current/ydb" ]
+   entrypoint: [ "/bin/bash", "-c", "tail -f /dev/null" ]
       
 
 
