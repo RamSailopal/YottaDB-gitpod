@@ -9,7 +9,7 @@
         {
                         "label": "mysql",
                         "type": "shell",
-                        "command": "docker exec -it mysql mysql"
+                        "command": "docker exec -it mysql mysql --user=\"root\" --password=\"present\""
                 },
 
         ]
