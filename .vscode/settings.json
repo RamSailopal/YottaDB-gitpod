@@ -4,7 +4,7 @@
     },
     "code-runner.executorMap": {
         "mumps": "docker exec -i yottadb /bin/bash -c '/opt/yottadb/current/ydb <<< \"ZL \\\"$fileName\\\" D ^$fileNameWithoutExt\"'",
-        "sql" : "./sqlexec.sh \"$dir$fileName\""
+        "sql" : "./sqlexe.sh \"$dir$fileName\""
     }
 }
 
