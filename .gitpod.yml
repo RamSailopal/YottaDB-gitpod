@@ -3,7 +3,7 @@ tasks:
   - init: |
       echo 'TODO: build project'
     command: |
-      mkdir ../data/r && ln -s ../data/r ../data/r1.32_x86_64/r && cd compose && docker-compose up
+      ln -s ../data/r1.32_x86_64/r ../data/r && cd compose && docker-compose up
 
 vscode:
   extensions:
