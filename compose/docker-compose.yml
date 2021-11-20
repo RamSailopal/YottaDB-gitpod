@@ -47,9 +47,8 @@ services:
       - ../data/r1.32_x86_64/g/yottadb.dat:/home/vehu/g/vehu.dat
    environment:
       - ydb_dir=/data
-      - gtmdir=/data
-      - ydb_rel="r1.32_x86_64"
-   entrypoint: [ "/bin/bash", "-c", "source /opt/yottadb/r1.32_x86_64/ydb_env_set && export ydb_rel=r1.32_x86_64 && /home/vehu/start.sh" ]
+      - gtmdir=/databib
+   entrypoint: [ "/bin/bash", "-c", "source /opt/yottadb/r1.32_x86_64/ydb_env_set && export ydb_rel=r1.32_x86_64 && /home/vehu/bin/start.sh" ]
       
 networks:
     yottanet:
