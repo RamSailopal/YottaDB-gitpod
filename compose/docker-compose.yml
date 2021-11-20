@@ -45,6 +45,7 @@ services:
       - ../data:/data
       - ../yottadb-gui/env:/home/vehu/etc/env
       - ../yottadb-gui/vista:/home/vehu/etc/init.d/vista
+      - ../yottadb-gui/start.sh:/home/vehu/bin/start.sh
       
 networks:
     yottanet:
