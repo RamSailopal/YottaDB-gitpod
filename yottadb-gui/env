@@ -24,5 +24,7 @@ export gtmroutines="$basedir/p/$gtmver*($basedir/p) $basedir/s/$gtmver*($basedir
 export GTMCI=$gtm_dist/plugin/ydbocto.ci
 export ydb_dist=$gtm_dist
 export gtmroutines="/home/vehu/octoroutines $gtm_dist/plugin/o/_ydbocto.so $gtm_dist/plugin/o/_ydbposix.so $gtmroutines"
+export ydb_dir=/data
+export ydb_rel="r1.32_x86_64"
 export GTMXC_ydbposix=$gtm_dist/plugin/ydbposix.xc
 
