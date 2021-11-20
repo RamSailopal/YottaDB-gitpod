@@ -44,6 +44,7 @@ services:
    volumes:
       - ../data:/data
       - ../yottadb-gui/env:/home/vehu/etc/env
+      - ../yottadb-gui/vista:/home/vehu/etc/init.d/vista
       
 networks:
     yottanet:
