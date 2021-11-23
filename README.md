@@ -23,8 +23,10 @@ To run a Gitpod with this repo:
 
 Further details about getting started with M programming can be found here - https://docs.yottadb.com/ProgrammersGuide/
 
-The directory data/r1.32_x86_64 containers three directories:
+The directory **data/r1.32_x86_64** containers three directories:
 
-**/r** - This is the directory where un-compiled routine code is created
+**/r** - This is the directory where un-compiled routine code is created.
+
 **/o** - This is where compiled code gets placed. (executing code-runner on any .m extension file will automatically do this)
-**/g** - This is where the dat file containing persistent globals are stored 
+
+**/g** - This is where the dat file containing persistent globals are stored. 
