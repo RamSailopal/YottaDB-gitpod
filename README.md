@@ -27,6 +27,6 @@ The directory **data/r1.32_x86_64** containers three directories:
 
 **/r** - This is the directory where un-compiled routine code is contained. This is the directory to open and begin development in!!!
 
-**/o** - This is where compiled code gets placed. (executing code-runner on any .m extension file will automatically create files here for the corresponding file in /r)
+**/o** - This is where compiled code gets placed. (executing code-runner play buton on any .m extension file will automatically create files here for the corresponding file in /r)
 
 **/g** - This is where the dat file containing persistent globals is stored. 
