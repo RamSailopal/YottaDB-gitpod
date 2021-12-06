@@ -3,7 +3,7 @@ tasks:
   - init: |
       echo 'TODO: build project'
     command: |
-      cd data && docker run --name yottadb -it -v $PWD:/data ramb0/yottadb-broot /opt/yottadb/current/ydb
+      cd data && docker run --name yottadb --name=yottadb -dt -v $PWD:/data ramb0/yottadb-broot /opt/yottadb/current/ydb
 
 vscode:
   extensions:
