@@ -10,7 +10,7 @@ A repo that allows M/YottaDB development in Gitpod
 2) Has the Code Runner extension enabled to allow MUMPS code to be compiled and executed from the Gitpod web IDE
 3) Terminal "drops you" directly into a YDB prompt
 
-![Alt text](ezgif.com-gif-maker.webp?raw=true "Broot view")
+![Alt text](broot.webp?raw=true "Broot view")
 
 
 # Gitpod
